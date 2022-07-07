@@ -3,8 +3,24 @@
 Esta es la actividad dirigida 3 que consiste en hacer un ejercicio de programación literaria aprovechando el código que hemos usado en programación con Python donde realizamos *web scraping*.
 A continuación pongo el código fuente.
 
-## Código fuente
 
+## instalar librerías
+pip install request bs4 pandas termcolor
+
+## Importar librerías
+Aquí voy a importar las siguientes librerías
+[Request](https://requests.readthedocs.io/en/latest/): 
+
+import requests
+import time
+import csv
+import re
+from bs4 import BeautifulSoup
+import os
+import pandas as pd
+from termcolor import colored
+
+## Código Fuente
 
 ```python
 import requests
@@ -286,19 +302,3 @@ print(colored("Sexo", 'green', attrs=['bold']))
 str_match = [s for s in resultados if "sexo" in s]
 print("\n".join(str_match))
 ```
-
-
-    ---------------------------------------------------------------------------
-
-    ModuleNotFoundError                       Traceback (most recent call last)
-
-    /tmp/ipykernel_24621/3526931410.py in <module>
-          6 import os
-          7 import pandas as pd
-    ----> 8 from termcolor import colored
-          9 
-         10 resultados = []
-
-
-    ModuleNotFoundError: No module named 'termcolor'
-
